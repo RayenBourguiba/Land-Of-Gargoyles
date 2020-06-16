@@ -1,20 +1,4 @@
 #include "main.h"
-/**
-* @file main.c
-* @brief Testing Program.
-* @author OH my code 
-* @version 0.1
-* @date may 01, 2019
-*
-* Testing program for menu of the game 
-*
-*/
-/**
-* @brief To initialize the background b of the menu  .
-* @param b the background
-* @param url the url of the image
-* @return int
-*/
 int main ( int argc, char** argv )
 {
     SDL_Init(SDL_INIT_VIDEO);
@@ -158,7 +142,7 @@ while (done!=0)
                     {
                          SDL_BlitSurface(b.instructions[2],NULL,screen,&pxin);
                         SDL_Flip(screen);
-                      instructions(screen);
+                        instructions(screen);
                        ins=0;
                         //SDL_Delay(200);
                         //return OPTION;
